@@ -58,13 +58,13 @@ def main():
 
         sair = input("Digite 'q' para sair ou pressione Enter para continuar: ")
 
-        if not manterTamanhoVetor:
-            bla = input("Manter o tamanho do vetor igual para todas as operações? (s/n): ").lower()
-        
-        if bla == 's':
-            manterTamanhoVetor = True
-        else:
-             manterTamanhoVetor = False
+        if sair != 'q':
+            if not manterTamanhoVetor:
+                bla = input("Manter o tamanho do vetor igual para todas as operações? (s/n): ").lower()
+                if bla == 's':
+                    manterTamanhoVetor = True
+                else:
+                    manterTamanhoVetor = False
 
 if __name__ == "__main__":
     main()
